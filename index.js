@@ -1,5 +1,5 @@
 const express = require("express");
-import { generateToken, getMailOptions, getTransport } from "./service.js";
+const { generateToken, getMailOptions, getTransport } = require("./service.js");
 
 const app = express();
 app.use(express.json());
