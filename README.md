@@ -3,17 +3,7 @@ This repo has the code sample for my article, ["How to Implement Magic Link in N
 
 ## Authors
 
-- [@Ogubuike Alex](https://github.com/king-Alex-d-great)
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`EMAIL_ADDRESS`
-
-`EMAIL_PASSWORD`
-
-Check the `.env.test`
+- [Ogubuike Alexandra](https://www.linkedin.com/in/ogubuike-alex/)
     
 ## Tech Stack
 
@@ -45,5 +35,15 @@ Start the server
 ```bash
   node index.js
 ```
+## Environment Variables
 
+To run the endpoints in this API project, you will need to add the following environment variables to your .env file
+
+`EMAIL_ADDRESS`
+
+`EMAIL_PASSWORD`
+
+`JWT_SECRET_KEY`
+
+Check the `.env.test` to see a sample
 
