@@ -1,0 +1,29 @@
+{
+  "name": "magic-link-with-nodemailer-gmail",
+  "version": "1.0.0",
+  "description": "Codebase for article, \"How to Implement Magic Link in Node.JS With Nodemailer, and Gmail\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "filler text"
+  },
+  "keywords": [
+    "NodeJs",
+    "Nodemailer",
+    "Gmail",
+    "Magic",
+    "Link",
+    "Passwordless",
+    "authentication"
+  ],
+  "author": "Ogubuike Alex",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.5"
+  }
+}
