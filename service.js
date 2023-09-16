@@ -1,7 +1,7 @@
 const nodeMailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
 
-export const getTransport = () => nodeMailer.createTransport({
+exports.getTransport = () => nodeMailer.createTransport({
     service: "gmail",
     auth: {
         user: process.env.EMAIL_ADDRESS,
@@ -9,13 +9,13 @@ export const getTransport = () => nodeMailer.createTransport({
     }
 });
 
-export const generateToken = (email) => {
+exports.generateToken = (email) => {
     const expirationDate = new Date();
     expirationDate.setMinutes(new Date().getMinutes() + 45);
     return jwt.sign({ email, expirationDate }, process.env.JWT_SECRET_KEY);
 };
 
-export const getMailOptions = (email, link) => {
+exports.getMailOptions = (email, link) => {
     let body = `
   <h2>Hey ${email}</h2>
   <p>Here's the special magic link you requested:</p>
